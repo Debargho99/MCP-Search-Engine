@@ -1,60 +1,56 @@
 # 🔍 MCP Search Engine
 
-A modern GUI-based platform for searching and extending Model Context Protocols (MCPs) using open-source LLMs like Sarvam-0.5 🇮🇳, Mistral 🇪🇺, and LLaMA 🌍.
+**MCP (Model Context Protocol) Search Engine** is a modern AI research and developer tool designed to explore, query, and build on structured model protocols using state-of-the-art open-source LLMs.
+
+You input a protocol (MCP) describing a model interaction or ML pipeline, and the system:
+- Retrieves similar protocols from a curated or custom dataset
+- Uses LLMs to suggest compatible tools, models, or APIs
+- Provides an interactive GUI (Streamlit) for fast iteration
 
 ---
 
-## 📌 Architecture
+## 📌 Architecture Overview
 
 ![MCP Schema](mcp_schema_diagram_final.png)
 
 ---
 
 ## ✨ Features
-- Upload your own MCP dataset (JSON)
-- Find similar MCPs using vector search (FAISS)
-- Get relevant tool suggestions using open-source LLMs
-- Interactive UI built with Streamlit
+
+- 📁 Upload your own dataset of MCPs (JSON format)
+- 🔍 Find similar MCPs using FAISS + BGE embeddings
+- 🤖 Get suggestions using open-source LLMs
+- 🧠 Choose from Indian 🇮🇳, Korean 🇰🇷, European 🇪🇺, and American 🇺🇸 models
+- 🖥️ Intuitive GUI powered by Streamlit
+
+---
+
+## 🧠 Supported LLMs
+
+| Model             | Region     | Description                                               |
+|------------------|------------|-----------------------------------------------------------|
+| Sarvam-0.5 🇮🇳    | India      | Instruction-tuned model for fast reasoning and QA         |
+| Exaone 🇰🇷        | Korea      | LGAI’s EXAONE 1.3B chat model for structured interaction   |
+| Mistral-7B 🇪🇺    | Europe     | High-quality multilingual reasoning and instruction model |
+| LLaMA-3 🇺🇸       | America    | Versatile general-purpose model with strong performance   |
 
 ---
 
 ## 💬 Example MCPs
-- Invoice table extractor using OCR + LayoutLM
-- Summarizer for academic PDFs with mT5
-- Toxic content classifier for social media
-- Recommender system using embeddings + Faiss
-- Chatbot orchestration with fallback tools
+
+- Extract tabular data from scanned invoices using OCR + LayoutLMv3
+- Summarize academic PDFs using mT5 and citation tagging
+- Detect toxic content using fine-tuned BERTs for social media
+- Product recommendations using user-item embeddings + Faiss
+- Chatbot protocol integrating RAG + fallback tools (calendar, weather)
 
 ---
 
-## 🚀 Run Locally
+## 🚀 How to Run
 
 ```bash
 pip install -r requirements.txt
 streamlit run mcp_search_gui.py
 ```
 
-> Requires GPU for fast LLM inference or use quantized models.
-
----
-
-## 🧠 LLMs Supported
-
-| Model            | Description                                    |
-|------------------|------------------------------------------------|
-| Sarvam-0.5 🇮🇳    | Indian instruction-tuned, compact & fast       |
-| Mistral-7B 🇪🇺    | High-quality, multilingual, performant         |
-| LLaMA-3 🌍       | Versatile general-purpose inference            |
-
----
-
-## 📁 Dataset Format
-
-```json
-[
-  {
-    "id": "mcp_001",
-    "description": "An MCP to extract tabular data from scanned invoices..."
-  }
-]
-```
+> For best performance, run on a machine with GPU and at least 16GB RAM.
