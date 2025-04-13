@@ -1,0 +1,22 @@
+[
+  {
+    "id": "mcp_001",
+    "description": "An MCP to extract tabular data from scanned invoices using OCR, layout parsing, and schema mapping tools. It includes steps for pre-processing, text extraction using Tesseract, table detection using LayoutLMv3, and mapping to structured JSON."
+  },
+  {
+    "id": "mcp_002",
+    "description": "An MCP that defines a pipeline to summarize long PDF research papers using chunked encoding and a multilingual summarization model like mT5, along with citation preservation using regular expressions."
+  },
+  {
+    "id": "mcp_003",
+    "description": "An MCP to detect and classify toxic content in social media posts. It involves preprocessing, tokenization using a BERT variant, sentiment tagging, and flagging policy violations with integration to moderation APIs."
+  },
+  {
+    "id": "mcp_004",
+    "description": "A model context protocol for generating personalized product recommendations using user embeddings, item embeddings, and a ranking model based on pairwise loss. Uses Faiss for similarity and PyTorch for ranking."
+  },
+  {
+    "id": "mcp_005",
+    "description": "A multilingual chatbot protocol with fallback logic: user query classification, named entity recognition, retrieval-augmented generation using a LLaMA model, and tool-based actions for calendar, weather, and reminders."
+  }
+]
