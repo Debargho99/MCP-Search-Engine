@@ -9,8 +9,9 @@ import os
 
 MODEL_OPTIONS = {
     "Sarvam-0.5 (India)": "sarvamai/sarvam-0.5",
+    "Exaone (Korea)": "LGAI-EXAONE/EXAONE-1.3B-chat",
     "Mistral-7B (Europe)": "mistralai/Mistral-7B-Instruct-v0.1",
-    "LLaMA-3 (Meta)": "meta-llama/Meta-Llama-3-8B"
+    "LLaMA-3 (America)": "meta-llama/Meta-Llama-3-8B"
 }
 
 EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"

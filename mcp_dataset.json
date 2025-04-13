@@ -1,22 +1,22 @@
 [
   {
     "id": "mcp_001",
-    "description": "An MCP to extract tabular data from scanned invoices using OCR, layout parsing, and schema mapping tools. It includes steps for pre-processing, text extraction using Tesseract, table detection using LayoutLMv3, and mapping to structured JSON."
+    "description": "An MCP to extract tabular data from scanned invoices using OCR and LayoutLMv3."
   },
   {
     "id": "mcp_002",
-    "description": "An MCP that defines a pipeline to summarize long PDF research papers using chunked encoding and a multilingual summarization model like mT5, along with citation preservation using regular expressions."
+    "description": "An MCP to summarize academic PDFs with citation extraction using mT5."
   },
   {
     "id": "mcp_003",
-    "description": "An MCP to detect and classify toxic content in social media posts. It involves preprocessing, tokenization using a BERT variant, sentiment tagging, and flagging policy violations with integration to moderation APIs."
+    "description": "An MCP for toxic content detection in social media using a fine-tuned BERT."
   },
   {
     "id": "mcp_004",
-    "description": "A model context protocol for generating personalized product recommendations using user embeddings, item embeddings, and a ranking model based on pairwise loss. Uses Faiss for similarity and PyTorch for ranking."
+    "description": "An MCP to generate product recommendations using user embeddings and Faiss."
   },
   {
     "id": "mcp_005",
-    "description": "A multilingual chatbot protocol with fallback logic: user query classification, named entity recognition, retrieval-augmented generation using a LLaMA model, and tool-based actions for calendar, weather, and reminders."
+    "description": "A multilingual chatbot protocol combining RAG with fallback tool execution."
   }
 ]
