@@ -29,7 +29,7 @@ You input a protocol (MCP) describing a model interaction or ML pipeline, and th
 
 | Model             | Region     | Description                                               |
 |------------------|------------|-----------------------------------------------------------|
-| Sarvam-0.5 🇮🇳    | India      | Instruction-tuned model for fast reasoning and QA         |
+| Sarvam-0.5 🇮🇳    | India       | Instruction-tuned model for fast reasoning and QA         |
 | Exaone 🇰🇷        | Korea      | LGAI’s EXAONE 1.3B chat model for structured interaction   |
 | Mistral-7B 🇪🇺    | Europe     | High-quality multilingual reasoning and instruction model |
 | LLaMA-3 🇺🇸       | America    | Versatile general-purpose model with strong performance   |
